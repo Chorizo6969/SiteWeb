@@ -201,4 +201,15 @@
 
   });
 
+    // Scroll vers la section correspondante quand on clique sur un features-item
+    document.querySelectorAll('.features-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const targetId = item.getAttribute('data-target');
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
 })();

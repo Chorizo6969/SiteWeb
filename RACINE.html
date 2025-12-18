@@ -154,7 +154,6 @@
             </div>
 
         </section><!-- /Portfolio Details Section -->
-
         <!-- Interests Section -->
         <section id="interests" class="interests section">
 
@@ -169,35 +168,303 @@
                 <div class="row gy-4">
 
                     <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="features-item">
-                            <i class="bi-chat-dots" style="color: #E1E1E1;"></i>
+                        <div class="features-item" data-target="portfolio-tutoriel">
+                            <i class="bi-chat-dots-fill" style="color: #ffffff;"></i>
                             <h3 class="stretched-link">Système lié au tutoriel</h3>
                         </div>
                     </div><!-- End Feature Item -->
 
-                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="features-item">
-                            <i class="bi-flower2" style="color: #77E63A; "></i>
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="features-item" data-target="portfolio-ia">
+                            <i class="bi-flower2" style="color: #ffffff;"></i>
                             <h3 class="stretched-link">IA des humains plantes</h3>
                         </div>
                     </div><!-- End Feature Item -->
 
-                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="features-item">
-                            <i class="bi-bucket" style="color: #94D9E6;"></i>
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="features-item" data-target="portfolio-expedition">
+                            <i class="bi-bucket-fill" style="color: #ffffff;"></i>
                             <h3 class="stretched-link">Système d'expédition</h3>
                         </div>
                     </div><!-- End Feature Item -->
 
-                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="features-item">
-                            <i class="bi-window-fullscreen" style="color: #e80368;"></i>
+                    <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="features-item" data-target="portfolio-ui">
+                            <i class="bi-window-fullscreen" style="color: #ffffff;"></i>
                             <h3 class="stretched-link">Intégration & UI</h3>
                         </div>
                     </div><!-- End Feature Item -->
                 </div>
             </div>
         </section>
+
+        <section id="portfolio-tutoriel" class="portfolio-details section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Ma fonction</h2>
+                <div><span class="description-title">Système lié au tutoriel</span></div>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+                            <!-- Pour config le swiper -->
+                            <script type="application/json" class="swiper-config">
+                                {
+                                    "loop": true,
+                                    "pagination": { "el": ".swiper-pagination", "clickable": true },
+                                    "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+                                }
+                            </script>
+
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineTuto.png" alt="">
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineTuto2.png" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineTuto3.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Origine et résultat</h3>
+                            <p>
+                                Le besoin d’un système de tutoriel est apparu suite aux retours de joueurs indiquant que le jeu était complexe à prendre en main, révélant un problème de design.
+                            </p>
+                            <p>
+                                Afin d’améliorer l’accessibilité du jeu dans le temps imparti, j’ai conçu et implémenté ce système de tutoriel.
+                            </p>
+                            <p>
+                                Après l’ajout de ce système, les joueurs comprenaient plus facilement les mécaniques du jeu, et l’utilisation de dialogues a permis de renforcer l’immersion.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Fonctionnement</h2>
+                        <p>
+                            Le système fonctionne de manière asynchrone : le script attend que le joueur réalise l’action demandée avant de poursuivre. Cette attente est gérée grâce aux coroutines de Unity, permettant de contrôler le déroulement du tutoriel sans bloquer le reste du jeu !
+                        </p>
+                        <p>
+                            Lorsque le joueur doit effectuer une action, le jeu déclenche un dialogue afin de l’avertir et d’expliquer clairement la consigne à l’écrit. Des flèches animées sont ensuite utilisées pour indiquer visuellement l’endroit où cliquer. Une fois l’action réalisée, un nouveau dialogue apparaît pour féliciter le joueur et valider l’étape du tutoriel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+
+        <section id="portfolio-ia" class="portfolio-details section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Ma fonction</h2>
+                <div><span class="description-title">l'IA des humains plantes</span></div>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+                            <!-- Pour config le swiper -->
+                            <script type="application/json" class="swiper-config">
+                                {
+                                    "loop": true,
+                                    "pagination": { "el": ".swiper-pagination", "clickable": true },
+                                    "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+                                }
+                            </script>
+
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineIA.png" alt="">
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineIA2.png" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineIA3.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Origine et résultat</h3>
+                            <p>
+                                Ces images présentent le blocking du jeu durant le développement des IA. Ici, le terme « IA » dans ce projet, désigne des personnages capables de se déplacer de façon dynamique dans l’environnement (pathfinding).
+                            </p>
+                            <p>
+                                Ceci est possible grâce à un composant dans Unity, NavMesh !
+                            </p>
+                            <p>
+                                Ce travail aboutit à des humains plantes capables d’évoluer et de se déplacer de manière autonome au sein d’un univers 3D !
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Fonctionnement</h2>
+                        <p>
+                            L’utilisation de NavMesh m’a permis de configurer des zones de déplacement, de crée des obstacles et d’adapter le parcours des humains plantes en fonction de l’environnement.
+                        </p>
+                        <p>
+                            Lors des expéditions, les humains-plantes reçoivent une destination cible et se déplacent dynamiquement depuis leur position vers celle-ci (comme la forêt pour les bûcherons), en s’appuyant sur le système de navigation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+
+        <section id="portfolio-expedition" class="portfolio-details section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Ma fonction</h2>
+                <div><span class="description-title">Système d'expédition</span></div>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+                            <!-- Pour config le swiper -->
+                            <script type="application/json" class="swiper-config">
+                                {
+                                    "loop": true,
+                                    "pagination": { "el": ".swiper-pagination", "clickable": true },
+                                    "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+                                }
+                            </script>
+
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineExp.png" alt="">
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineExp2.png" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineExp3.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Origine et résultat</h3>
+                            <p>
+                                Les expéditions constituent l’unique moyen d’obtenir des ressources dans le jeu. Le joueur doit donc choisir le nombre d’humains plantes à envoyés en mission, sachant que plus l’effectif est important, plus la récompense obtenue sera élevée.
+                            </p>
+                            <p>
+                                Lors d’une expédition, tous les humains-plantes envoyés se déplacent automatiquement vers leur lieu de travail.
+                            </p>
+                            <p>
+                                Ce système contribue à rendre les humains plantes plus vivants et crédibles dans le jeu. En se déplaçant de manière autonome vers leurs objectifs et en participant activement aux expéditions, ils donnent l’impression d’avoir des comportements propres, renforçant ainsi l’immersion et la dynamique du village !
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Fonctionnement</h2>
+                        <p>
+                            À la naissance d’un humain plante, <b> un événement </b> est déclenché : le jeu génère alors un nom aléatoire pour le nouveau-né, récupère son métier pour l’ajouter à la liste correspondante, puis lui assigne une UI qui lui est propre.
+                        </p>
+                        <p>
+                            <b>L'événement </b> utilise le design pattern Observer : dès qu’un humain-plante est instancié, le système est automatiquement notifié de sa création et effectue les actions nécessaires (assignation de nom, métier et interface).
+                        </p>
+                        <p>
+                            <b>Note : </b> Avant leur instanciation dans le jeu, les humains plantes sont représentés par des Scriptable Objects, des assets Unity qui permettent de stocker des données de manière indépendante à une scène, facilitant ainsi la gestion et la réutilisation des informations (comme le nom, le métier ou les caractéristiques).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+
+        <section id="portfolio-ui" class="portfolio-details section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Ma fonction</h2>
+                <div><span class="description-title">Intégration & UI</span></div>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+                            <!-- Pour config le swiper -->
+                            <script type="application/json" class="swiper-config">
+                                {
+                                    "loop": true,
+                                    "pagination": { "el": ".swiper-pagination", "clickable": true },
+                                    "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+                                }
+                            </script>
+
+                            <div class="swiper-wrapper align-items-center">
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineG2.png" alt="">
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineUI.png" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="assets/img/portfolio/RACINEGameplay/racineTuto3.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Réalisation</h3>
+                            <p>
+                                J’ai pris en charge l’intégration des animations, de l’UI et des meshes. L’interface est également responsive, garantissant une expérience fluide sur toutes les résolutions. (le jeu n'est disponible que sur Windows pour l'instant).
+                            </p>
+                            <p>
+                                Ce projet m’a permis de me familiariser avec de nombreux composants d’UI de Unity, tels que les Scroll Rect et les Sliders !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+
     </main>
 
     <footer id="footer" class="footer dark-background">
